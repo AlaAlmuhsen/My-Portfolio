@@ -113,7 +113,14 @@ ul {
  .header .logo {
     font-size: 26px;
     color: var(--main-color);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(219, 219, 219) 100%);
+    border-radius: 4px;
     font-weight: 800;
+    padding: 5px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    /* -webkit-box-reflect: right; */
+
+
 }
 .header nav .toggle-menu {
     font-size: 28px;
@@ -209,6 +216,7 @@ ul {
     align-items: center;
     text-align: center;
     margin-bottom: var(--section-margin);
+    transition: width 2s, height 2s, transform 2s;
 }
 .landing .txt-box {
     padding-top: 50px;
@@ -226,6 +234,11 @@ ul {
 .landing img {
     padding-top: 30px;
     width: 260px;
+    transition: 2s;
+}
+.landing img:hover{
+    transform: rotate(360deg);
+
 }
 .landing .vector {
     width: 50%;
